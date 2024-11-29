@@ -302,9 +302,10 @@ class _YourActivities extends State<YourActivities> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             SizedBox(height: 0.005 * size.height),
+            
             Center(
               child: Text(
-                "YOUR ACTIVITIES",
+                "Broin Activities",
                 style: TextStyle(
                   fontSize: size.width / 12,
                   fontWeight: FontWeight.bold,

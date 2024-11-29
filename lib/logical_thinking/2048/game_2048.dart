@@ -159,12 +159,13 @@ class _Game2048State extends State<Game2048> {
                             decoration: BoxDecoration(
                               color: (Theme.of(context).brightness ==
                                       Brightness.light)
-                                  ? boardColorLight
-                                  : boardColorDark,
+                                  ? const Color.fromARGB(255, 161, 159, 159)
+                                  : const Color.fromARGB(255, 124, 124, 124),
                               borderRadius: BorderRadius.circular(8),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black.withOpacity(0.2),
+                                  color: const Color.fromARGB(255, 0, 0, 0)
+                                      .withOpacity(0.2),
                                   blurRadius: 6,
                                   offset: const Offset(0, 3),
                                 ),
@@ -231,17 +232,18 @@ class _Game2048State extends State<Game2048> {
               Row(
                 children: [
                   Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Text(
-                          "2048",
-                          style: TextStyle(
-                            fontSize: size.width / 8,
-                            fontWeight: FontWeight.w900,
-                          ),
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text(
+                        "2048",
+                        style: TextStyle(
+                          fontSize: size.width / 8,
+                          fontWeight: FontWeight.w900,
                         ),
-                        const InstructionsButton(Info2048()),
-                      ],),
+                      ),
+                      const InstructionsButton(Info2048()),
+                    ],
+                  ),
                   const Spacer(),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -255,8 +257,8 @@ class _Game2048State extends State<Game2048> {
                             decoration: BoxDecoration(
                               color: (Theme.of(context).brightness ==
                                       Brightness.light)
-                                  ? boardColorLight
-                                  : boardColorDark,
+                                  ? const Color.fromARGB(255, 165, 165, 165)
+                                  : const Color.fromARGB(255, 114, 114, 114),
                               borderRadius: BorderRadius.circular(8),
                               boxShadow: [
                                 BoxShadow(
@@ -291,8 +293,8 @@ class _Game2048State extends State<Game2048> {
                             decoration: BoxDecoration(
                               color: (Theme.of(context).brightness ==
                                       Brightness.light)
-                                  ? boardColorLight
-                                  : boardColorDark,
+                                  ? const Color.fromARGB(255, 153, 153, 153)
+                                  : const Color.fromARGB(255, 95, 95, 95),
                               borderRadius: BorderRadius.circular(8),
                               boxShadow: [
                                 BoxShadow(
@@ -336,8 +338,8 @@ class _Game2048State extends State<Game2048> {
                               decoration: BoxDecoration(
                                 color: (Theme.of(context).brightness ==
                                         Brightness.light)
-                                    ? boardColorLight
-                                    : boardColorDark,
+                                    ? const Color.fromARGB(255, 170, 170, 170)
+                                    : const Color.fromARGB(255, 126, 126, 126),
                                 borderRadius: BorderRadius.circular(8),
                                 boxShadow: [
                                   BoxShadow(
@@ -373,8 +375,8 @@ class _Game2048State extends State<Game2048> {
                               decoration: BoxDecoration(
                                 color: (Theme.of(context).brightness ==
                                         Brightness.light)
-                                    ? boardColorLight
-                                    : boardColorDark,
+                                    ? const Color.fromARGB(255, 175, 175, 175)
+                                    : const Color.fromARGB(255, 121, 121, 121),
                                 borderRadius: BorderRadius.circular(8),
                                 boxShadow: [
                                   BoxShadow(
@@ -430,8 +432,8 @@ class _Game2048State extends State<Game2048> {
                   width: boardSize,
                   decoration: BoxDecoration(
                     color: (Theme.of(context).brightness == Brightness.light)
-                        ? boardColorLight
-                        : boardColorDark,
+                        ? const Color.fromARGB(255, 165, 165, 165)
+                        : const Color.fromARGB(255, 116, 116, 116),
                     borderRadius: BorderRadius.circular(8),
                     boxShadow: [
                       BoxShadow(

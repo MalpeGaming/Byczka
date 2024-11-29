@@ -105,9 +105,15 @@ class _Finish extends State<Finish> {
                           ),
                           SizedBox(height: 0.01 * size.height),
                           Text(
-                            "Brain Improvement Program",
+                            "Broin Improvement Program",
                             style: TextStyle(fontSize: 0.05 * size.width),
                           ),
+                          SizedBox(height: 0.01 * size.height),
+                          Text(
+                            "To use the app again, restart it in the phone settings.",
+                            style: TextStyle(fontSize: 0.05 * size.width),
+                          ),
+                          
                         ],
                       ),
                     ),

@@ -34,20 +34,9 @@ class _Contact extends State<Contact> {
             ),
             SizedBox(height: 0.035 * size.height),
             const MarkdownBody(
-              data: '''E-Mail Address: **appbraintrain@gmail.com**
+              data: '''E-Mail Address: **taccout7@gmail.com**
 
-Phone Number: **+48 577 568 833**
 
-On Facebook: **BrainAce.pro**
-
-&nbsp;
-## Contact the leader.
-
-E-Mail Address: **siodawera@gmail.com**
-
-Phone Number: **+48 577 568 833**
-
-On Facebook: **Weronika Sioda**
 
 
 ''',

@@ -233,21 +233,32 @@ class _BMI extends State<BMI> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Center(
-                    child: Text(
-                      "BMI",
-                      style: TextStyle(
-                        fontSize: size.width / 7,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  Center(
-                    child: Text(
-                      "CALCULATOR",
-                      style: TextStyle(fontSize: size.width / 20),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
+  child: Text(
+    "BMI",
+    style: TextStyle(
+      fontSize: size.width / 7,
+    ),
+    textAlign: TextAlign.center,
+  ),
+),
+Center(
+  child: Text(
+    "CALCULATOR",
+    style: TextStyle(fontSize: size.width / 20),
+    textAlign: TextAlign.center,
+  ),
+),
+Center(
+  child: Text(
+    "based on www.truthaboutweight.global",
+    style: TextStyle(
+      fontSize: size.width / 30,
+      color: Colors.grey, // Możesz dostosować kolor według potrzeb
+    ),
+    textAlign: TextAlign.center,
+  ),
+),
+
                 ],
               ),
               Container(

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.app"> <!-- Upewnij się, że wstawisz prawidłowy package name -->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,10 +13,9 @@
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:label="BrainAce.pro"
+        android:label="Broin"
         android:usesCleartextTraffic="true"
-        android:enableOnBackInvokedCallback="true"
-        >
+        android:enableOnBackInvokedCallback="true">
 
         <receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
         <receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
@@ -34,7 +34,6 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
-
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/todo_home_screen_widget_info" />
@@ -49,12 +48,6 @@
             android:theme="@style/LaunchTheme"
             android:windowSoftInputMode="adjustResize">
 
-            <!--
-                 Specifies an Android theme to apply to this Activity as soon as
-                 the Android process has started. This theme is visible to the user
-                 while the Flutter UI initializes. After that, this theme continues
-                 to determine the Window background behind the Flutter UI.
-            -->
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
@@ -68,7 +61,7 @@
         <service
             android:name=".ListWidgetService"
             android:exported="true"
-            android:permission="android.permission.BIND_REMOTEVIEWS" >
+            android:permission="android.permission.BIND_REMOTEVIEWS">
             <intent-filter>
                 <action android:name="android.widget.RemoteViewsService" />
             </intent-filter>
@@ -80,17 +73,17 @@
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
-
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/port_home_tasks_widget_info"
-                />
+                android:resource="@xml/port_home_tasks_widget_info"/>
         </receiver>
 
-        <!--
- Don't delete the meta-data below.
-             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-        -->
+        <!-- Meta-data dla AdMob -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4178704949730793~7360349419"/>
+
+        <!-- Meta-data Flutter -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
@@ -102,5 +95,5 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
-
+    
 </manifest>

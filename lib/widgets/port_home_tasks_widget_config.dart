@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:davinci/davinci.dart';
-//import 'package:davinci/core/davinci_capture.dart';
+import 'package:davinci/core/davinci_capture.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:home_widget/home_widget.dart';
 import 'package:path_provider/path_provider.dart';

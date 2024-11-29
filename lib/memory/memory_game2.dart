@@ -130,8 +130,8 @@ class _MemoryGame2 extends State<MemoryGame2> {
                         colors:
                             (Theme.of(context).brightness == Brightness.light)
                                 ? <Color>[
-                                    const Color.fromARGB(255, 187, 169, 248),
-                                    const Color.fromARGB(255, 175, 127, 252),
+                                    const Color.fromARGB(255, 184, 184, 184),
+                                    const Color.fromARGB(255, 109, 109, 109),
                                   ]
                                 : <Color>[
                                     Theme.of(context).colorScheme.primary,

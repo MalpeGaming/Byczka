@@ -28,7 +28,7 @@ class _TermsOfService extends State<TermsOfService> {
 
 ## Introduction
 
-Welcome to Brain Train, a brain improvement app designed to help users enhance their cognitive abilities through various brain training exercises. By using our app, you agree to the following terms and conditions. Please read them carefully.
+Welcome to Broin, a brain improvement app designed to help users enhance their cognitive abilities through various brain training exercises. By using our app, you agree to the following terms and conditions. Please read them carefully.
 
 &nbsp;
 
@@ -36,11 +36,10 @@ Welcome to Brain Train, a brain improvement app designed to help users enhance t
 
 1. **Acceptance of Terms**
     
-    By accessing and using the Brain Train app, you agree to be bound by these Terms of Use, all applicable laws, and regulations. If you do not agree with any part of these terms, you must not use our app.
-    
+  By accessing and using the Broin app, you agree to be bound by these Terms of Use, all applicable laws, and regulations. If you do not agree with any part of these terms, you must not use our app.
 2. **Eligibility**
     
-    You must be at least 18 years old to use the Brain Train app. If you are under 18, you may only use the app with the involvement of a parent or guardian.
+    You must be at least 18 years old to use the Broin app. If you are under 18, you may only use the app with the involvement of a parent or guardian.
     
 &nbsp;
 
@@ -48,59 +47,57 @@ Welcome to Brain Train, a brain improvement app designed to help users enhance t
 
 1. **No Guaranteed Improvement**
     
-    The brain training plan provided by the Brain Train app is not guaranteed to improve your brain function. Results may vary from user to user.
+   The brain training plan provided by the Broin app is not guaranteed to improve your brain function. Results may vary from user to user.
     
 2. **Health and Safety**
     
-    If you have any health concerns or experience any issues while using the Brain Train app, you should contact your healthcare professional immediately. The Brain Train team is not responsible for any injuries or problems that may arise from using the app.
+    If you have any health concerns or experience any issues while using the Broin app, you should contact your healthcare professional immediately. The Broin team is not responsible for any injuries or problems that may arise from using the app.
     
 &nbsp;
 
 ## Neurological Basis
 
 1. **Training Concept**
-The Brain Train app is based on the neurological concept that says, "What fires together, wires together." This means that the more you practice a certain activity, the better you get at it. The exercises in our app are designed to reinforce neural pathways through repeated practice.
-
+Training Concept The Broin app is based on the neurological concept that says, "What fires together, wires together." This means that the more you practice a certain activity, the better you get at it. The exercises in our app are designed to reinforce neural pathways through repeated practice.
 &nbsp;
 
 ## User Responsibility
 
 1. **Use at Your Own Risk**
-You are using the Brain Train app at your own risk. We do not warrant that the app will meet your specific requirements or that it will be free from errors or interruptions.
-
+Use at Your Own Risk You are using the Broin app at your own risk. We do not warrant that the app will meet your specific requirements or that it will be free from errors or interruptions.
+ 
 &nbsp;
 
 ## Contact Information
 
 1. **Contact Details**
-If you have any questions or need support, you can contact us at:
-    - Email: [appbraintrain@gmail.com](mailto:appbraintrain@gmail.com)
-    - Phone: +48 577 568 833
+Contact Details If you have any questions or need support, you can contact us at:
+    - Email: [taccout7@gmail.com](mailto:taccout7@gmail.com)
+
 
 &nbsp;
 
 ## Amendments
 
 1. **Changes to Terms**
-We reserve the right to modify these Terms of Use at any time. Any changes will be effective immediately upon posting the revised terms within the app. Your continued use of the app after any changes are posted constitutes your acceptance of the new terms.
+Changes to Terms We reserve the right to modify these Terms of Use at any time. Any changes will be effective immediately upon posting the revised terms within the app. Your continued use of the app after any changes are posted constitutes your acceptance of the new terms.
 
 &nbsp;
 
 ## Termination
 
 1. **Termination of Use**
-We reserve the right to terminate or suspend your access to the Brain Train app at our sole discretion, without prior notice, for conduct that we believe violates these Terms of Use or is harmful to other users of the app, us, or third parties, or for any other reason.
-
+Termination of Use We reserve the right to terminate or suspend your access to the Broin app at our sole discretion, without prior notice, for conduct that we believe violates these Terms of Use or is harmful to other users of the app, us, or third parties, or for any other reason.
 &nbsp;
 
 ## Governing Law
 
 1. **Jurisdiction**
-These terms and conditions are governed by and construed in accordance with the laws of the European Union, and you irrevocably submit to the exclusive jurisdiction of the courts in that region.
+Jurisdiction These terms and conditions are governed by and construed in accordance with the laws of the European Union, and you irrevocably submit to the exclusive jurisdiction of the courts in that region.
 
 &nbsp;
 
-By using the Brain Train app, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
+By using the Broin app, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.
 
         ''',
         ),

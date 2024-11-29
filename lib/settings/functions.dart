@@ -231,7 +231,7 @@ class Site {
   static void launch() {
     launchUrl(
       Uri.parse(
-        "https://braintrain-by-wk.shorthandstories.com/thebraintrainapp/index.html#article",
+        "broinapp.pl",
       ),
     );
   }

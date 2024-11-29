@@ -38,10 +38,10 @@ class _Settings extends State<Settings> {
   ];
   List<bool> highlighted = [false, false, false, false, false, false];
   List<Color> colors = [
-    const Color(0xFF8388E1),
-    const Color(0xFF004AAD),
-    const Color(0xFF6B418D),
-    const Color(0xFFE7D1FF),
+    const Color.fromARGB(255, 182, 182, 182),
+    const Color.fromARGB(255, 211, 211, 211),
+    const Color.fromARGB(255, 192, 192, 192),
+    const Color.fromARGB(255, 187, 187, 187),
   ];
   Widget element(
     BuildContext context,
@@ -183,8 +183,18 @@ class _Settings extends State<Settings> {
             children: <Widget>[
               SizedBox(height: 0.1 * size.height),
               Center(
+              child: Text(
+                "-Broin App-",
+                style: TextStyle(
+                  fontSize: size.width / 12,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+              Center(
                 child: Text(
-                  "SETTINGS",
+                  "Settings",
                   style: TextStyle(
                     fontSize: size.width / 8,
                   ),

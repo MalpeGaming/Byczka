@@ -29,9 +29,9 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
               return const YourActivities();
             } else if (index == 1) {
               return const Progress();
-            //} else if (index == 3) {
-            //  return const NutritionTips();
-            } else if (index == 3) { // temp navbar fix
+            } else if (index == 3) {
+              return const NutritionTips();
+            } else if (index == 4) { // Correct index for Settings
               return const Settings();
             } else {
               return const Home();
@@ -44,56 +44,68 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Container(
-      height: size.height / 11,
+      padding: const EdgeInsets.symmetric(vertical: 8),
       color: Theme.of(context).colorScheme.primary,
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border(
-            top: BorderSide(
-              color: Theme.of(context).colorScheme.onPrimary,
-              width: 2,
-            ),
-          ),
-        ),
-        child: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: Theme.of(context).colorScheme.surface,
-          selectedFontSize: 13,
-          unselectedFontSize: 12,
-          unselectedItemColor: Theme.of(context).colorScheme.primary,
-          selectedItemColor: Theme.of(context).colorScheme.onPrimary,
-          items: [
-            buildMenuIcon(0, "Activities"),
-            buildMenuIcon(1, "Progress"),
-            buildMenuIcon(2, "Home"),
-            //buildMenuIcon(3, "Diet"),
-            buildMenuIcon(3, "Settings"), // temp navbar fix
-          ],
-          currentIndex: _selectedIndex,
-          onTap: _onItemTapped,
-        ),
+      child: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        selectedFontSize: 13,
+        unselectedFontSize: 12,
+        unselectedItemColor: Theme.of(context).colorScheme.onPrimary.withOpacity(0.6),
+        selectedItemColor: Theme.of(context).colorScheme.onPrimary,
+        items: [
+          buildMenuIcon(0, "Activities"),
+          buildMenuIcon(1, "Progress"),
+          buildCenterIcon(2, "Home"), // Center icon with special styling
+          buildMenuIcon(3, "Diet"),
+          buildMenuIcon(4, "Settings"), // Corrected index for Settings
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
       ),
     );
   }
 
-  BottomNavigationBarItem buildMenuIcon(int index, String lab) {
-    Size size = MediaQuery.of(context).size;
+  BottomNavigationBarItem buildMenuIcon(int index, String label) {
     return BottomNavigationBarItem(
-      icon: Stack(
-        children: [
-          ImageIcon(
-            AssetImage(
-              "assets/navbar_icons/${lab.toLowerCase()}_${_selectedIndex == index ? 'on' : 'off'}_l.png",
-            ),
-            color: Theme.of(context).colorScheme.onPrimary,
-            size: _selectedIndex == index ? 38 : 32,
+      icon: Container(
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: _selectedIndex == index
+              ? Theme.of(context).colorScheme.onPrimary
+              : Colors.transparent,
+        ),
+        child: ImageIcon(
+          AssetImage(
+            "assets/navbar_icons/${label.toLowerCase()}_${_selectedIndex == index ? 'on' : 'off'}_l.png",
           ),
-          SizedBox(height: 0.042 * size.height),
-        ],
+          color: _selectedIndex == index
+              ? Theme.of(context).colorScheme.primary
+              : Theme.of(context).colorScheme.onPrimary.withOpacity(0.6),
+          size: _selectedIndex == index ? 28 : 24,
+        ),
       ),
-      label: lab,
+      label: label,
+    );
+  }
+
+  BottomNavigationBarItem buildCenterIcon(int index, String label) {
+    return BottomNavigationBarItem(
+      icon: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: Theme.of(context).colorScheme.onPrimary,
+        ),
+        child: ImageIcon(
+          AssetImage("assets/navbar_icons/${label.toLowerCase()}_on_l.png"),
+          color: Theme.of(context).colorScheme.primary,
+          size: 32,
+        ),
+      ),
+      label: label,
     );
   }
 }

@@ -206,7 +206,7 @@ class _Progress extends State<Progress> {
               children: <Widget>[
                 Center(
                   child: Text(
-                    "YOUR 30 DAYS",
+                    "Your Progress",
                     style: TextStyle(
                       fontSize: size.width / 9,
                       fontWeight: FontWeight.w500,

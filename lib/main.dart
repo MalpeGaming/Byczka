@@ -3,7 +3,6 @@ import 'title_page.dart';
 import 'package:flutter/services.dart';
 import 'package:brain_train_app/notification.dart';
 
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await NotificationService.init();
@@ -40,14 +39,14 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         brightness: Brightness.light,
         colorScheme: const ColorScheme.light(
-          primary: Color.fromARGB(255, 133, 138, 227),
-          onPrimary: Color.fromARGB(255, 95, 102, 248),
-          secondary: Color.fromARGB(255, 244, 250, 255),
+          primary: Color.fromARGB(255, 187, 187, 187),
+          onPrimary: Color.fromARGB(255, 121, 121, 121),
+          secondary: Color.fromARGB(255, 116, 116, 116),
           onSecondary: Colors.black,
-          tertiary: Colors.white,
+          tertiary: Color.fromARGB(255, 189, 189, 189),
           surface: Color.fromARGB(255, 252, 252, 252),
-          error: Color.fromARGB(255, 238, 51, 38),
-          shadow: Color.fromARGB(255, 167, 167, 167),
+          error: Color.fromARGB(255, 255, 156, 149),
+          shadow: Color.fromARGB(255, 255, 255, 255),
         ),
         useMaterial3: true,
         fontFamily: 'Arial',
@@ -55,9 +54,9 @@ class _MyAppState extends State<MyApp> {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         colorScheme: const ColorScheme.dark(
-          primary: Color.fromARGB(255, 126, 82, 160),
-          onPrimary: Color.fromARGB(255, 117, 72, 151),
-          secondary: Color.fromARGB(255, 102, 148, 190),
+          primary: Color.fromARGB(255, 117, 117, 117),
+          onPrimary: Color.fromARGB(255, 224, 224, 224),
+          secondary: Color.fromARGB(255, 255, 255, 255),
           onSecondary: Colors.white,
           tertiary: Colors.black,
           surface: Color.fromARGB(255, 19, 19, 19),

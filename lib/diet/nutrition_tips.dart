@@ -35,7 +35,7 @@ class _NutritionTips extends State<NutritionTips> {
                 children: <Widget>[
                   Center(
                     child: Text(
-                      "NUTRITION",
+                      "Nutrition",
                       style: TextStyle(
                         fontSize: size.width / 7,
                       ),
@@ -44,7 +44,7 @@ class _NutritionTips extends State<NutritionTips> {
                   ),
                   Center(
                     child: Text(
-                      "TIPS",
+                      "-Tips by Broin-",
                       style: TextStyle(fontSize: size.width / 17),
                       textAlign: TextAlign.center,
                     ),
@@ -66,7 +66,7 @@ class _NutritionTips extends State<NutritionTips> {
               createActivity(
                 context,
                 "diet/calorie_req",
-                "Estimate your Calorie Requirements.",
+                "Estimate Calories Requirements.",
                 "",
                 0.025 * size.height,
                 const CalRequirementsCalc(),
@@ -77,7 +77,7 @@ class _NutritionTips extends State<NutritionTips> {
               createActivity(
                 context,
                 "diet/supplements",
-                "What supplements are good for your brain?",
+                "Supplements for your brain",
                 "",
                 0.023 * size.height,
                 const BrainSupplements(),
@@ -88,7 +88,7 @@ class _NutritionTips extends State<NutritionTips> {
               createActivity(
                 context,
                 "diet/should_avoid",
-                "What should you eat/avoid eating?",
+                "What should you eat?",
                 "",
                 0.025 * size.height,
                 const FoodTable(),
@@ -99,7 +99,7 @@ class _NutritionTips extends State<NutritionTips> {
               createActivity(
                 context,
                 "diet/recipes",
-                "5 Brain Train recipes",
+                "5 Brain recipes",
                 "",
                 0.025 * size.height,
                 const Recipes(),

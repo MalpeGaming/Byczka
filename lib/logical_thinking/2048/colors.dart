@@ -1,10 +1,10 @@
 import 'dart:ui';
 
-const boardColorLight = Color.fromARGB(255, 158, 161, 255);
-const boardColorDark = Color.fromARGB(255, 126, 80, 159);
+const boardColorLight = Color.fromARGB(255, 187, 187, 187);
+const boardColorDark = Color.fromARGB(255, 119, 119, 119);
 
 const tileColorsLight = {
-  0: Color.fromARGB(255, 198, 200, 249),
+  0: Color.fromARGB(255, 212, 212, 212),
   2: Color.fromARGB(255, 245, 192, 69),
   4: Color.fromARGB(255, 255, 103, 77),
   8: Color.fromARGB(255, 222, 43, 54),
@@ -19,7 +19,7 @@ const tileColorsLight = {
 };
 
 const tileColorsDark = {
-  0: Color.fromARGB(255, 205, 149, 245),
+  0: Color.fromARGB(255, 158, 158, 158),
   2: Color.fromARGB(255, 248, 213, 58),
   4: Color.fromARGB(255, 255, 103, 77),
   8: Color.fromARGB(255, 222, 43, 54),

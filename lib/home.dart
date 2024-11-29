@@ -253,16 +253,18 @@ class _Home extends State<Home> {
 
   @override
   initState() {
-
-    NotificationService.showInstantNotification("testt", "bdedsrwrts t g ert t");
+    NotificationService.showInstantNotification(
+        "testt", "bdedsrwrts t g ert t");
     print("INIT");
-    DateTime selectedTime = DateTime.now().add(Duration(seconds: 10)); // For testing purposes
-    NotificationService.scheduleNotification(0, "ASD", "TEstbody", selectedTime);
+    DateTime selectedTime =
+        DateTime.now().add(Duration(seconds: 10)); // For testing purposes
+    NotificationService.scheduleNotification(
+        0, "ASD", "TEstbody", selectedTime);
 
     WidgetsBinding.instance.addPostFrameCallback((timestamp) {
-    PortHomeTasksWidgetConfig.initialize().then((value) async {
+      PortHomeTasksWidgetConfig.initialize().then((value) async {
         callHomeWidgetUpdate();
-        });
+      });
     });
     super.initState();
     readMemory();
@@ -321,10 +323,11 @@ class _Home extends State<Home> {
 
   void callHomeWidgetUpdate() {
     List<String> widgetItems = [];
-    for (int i = 0; i < plan.length; i++)
-    {
-      widgetItems.add("${basePlanTicked[i] == "1" ? "◉" : "○"}:${sectionNames[plan[i]]}");
-      print("plan[$i] ${plan[i]} ${sectionNames[plan[i]]} ${basePlanTicked[i]}");
+    for (int i = 0; i < plan.length; i++) {
+      widgetItems.add(
+          "${basePlanTicked[i] == "1" ? "◉" : "○"}:${sectionNames[plan[i]]}");
+      print(
+          "plan[$i] ${plan[i]} ${sectionNames[plan[i]]} ${basePlanTicked[i]}");
     }
 
     HomeWidget.saveWidgetData("plan_title", "To - Do List");
@@ -489,9 +492,10 @@ class _Home extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  
                   Center(
                     child: Text(
-                      "YOUR PLAN",
+                      "-Broin Plan-",
                       style: TextStyle(
                         fontSize: size.width / 8,
                       ),
